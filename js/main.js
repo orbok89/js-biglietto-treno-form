@@ -1,10 +1,13 @@
 var attivazione = document.getElementById('calcola');
-
+var annullo = document.getElementById('annulla');
+// generatore biglietto 
 attivazione.addEventListener('click',
     function(){
         var nome = document.getElementById('nome').value;
         var km = document.getElementById('km').value;
         var eta = document.getElementById('eta').value;
+        var Biglietto = document.getElementById('biglietto')
+        Biglietto.style.display = 'block'
         if (eta == 'minorenne'){
             var costo =(Number(km * 0.21 * 0.8).toFixed(2)  );
             var nome_offerta = 'Sconto minorenni';
@@ -24,4 +27,14 @@ attivazione.addEventListener('click',
         document.getElementById('codice').innerHTML= Math.floor(Math.random() * 10000) + 90000;
     }
 
+)
+annullo.addEventListener('click',
+    function(){
+        var Biglietto = document.getElementById('biglietto')
+        Biglietto.style.display = 'none'
+        nome = document.getElementById('nome').value = '';
+        km = document.getElementById('km').value = '';
+        eta = document.getElementById('eta').value = '';
+
+    }
 )

@@ -22,3 +22,6 @@ label{
     display: flex;
 
 }
+#biglietto{
+    display: none;
+}
