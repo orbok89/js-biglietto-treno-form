@@ -10,26 +10,53 @@
 <body>
     <header><h1>CALCOLA PREZZO DEL BIGLIETTO</h1></header>
     <main>
-        <div class="container">
-            <div>
-                <label for="nome">Nome e Cognome</label>
-                <input type="text" id="nome" name="nome">
+        <div class="container ">
+            <!-- input1 -->
+            <div class="riga_1">
+                <div>
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <!-- fine input1 -->
+                <!-- input2 -->
+                <div>
+                    <label for="km">km da percorrere</label>
+                    <input type="number" id="km" name="km">
+                </div>
+                <!-- fine input2 -->
+                <!-- input3 -->
+                <div>
+                    <label for="nome">Età</label>
+                    <select id="eta" name="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+    
+                    </select>
+                </div>
             </div>
+            <!-- fine input3 -->
+            <!-- bottone1 -->
             <div>
-                <label for="km">km da percorrere</label>
-                <input type="number" id="km" name="km">
+                <button id="calcola" name="calcola" type="button">Genera</button>
+                <button id="annulla" name="annulla" type="button">Annulla</button>
             </div>
-            <div>
-                <label for="nome">Nome e Cognome</label>
-                <select id="eta" name="eta">
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="over65">Over 65</option>
-                  </select>
-            </div>
+
           
         </div>
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="container">
+            <h4>DETTAGLIO PASSEGGERI</h4>
+            <div>
+                <div>nome passegero <span id="nome_1"></span></div>
+                <div>offerta <span id="nome_offerta"></span></div>
+                <div>carrozza <span id="carrozza"></span></div>
+                <div>codice cp <span id="codice"></span></div>
+                <div>costo biglietto <span id="costo"></span></div>
+            </div>
+        </div>
     </main>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
