@@ -13,7 +13,7 @@ h1, h2{
 }
 .container{
     width: 80%;
-    height: 300px;
+    height: 200px;
     background-color: white;
     margin: 0 auto;
     border-radius: 30px;
@@ -24,17 +24,18 @@ label{
 .riga_1{
     display: flex;
     justify-content: space-around;
-    height: 150px;
+    height: 100px;
     align-items: center;
 
 }
 #biglietto{
     display: none;
 }
-.prova{
+.prova-1{
     display: flex;
     flex-direction: column;
     color: brown;
+    justify-content: space-around;
 }
 input, select {
     border: 2px solid brown;
@@ -48,4 +49,42 @@ input, select {
     margin: 15px;
     color: brown;
     font-size: 25px;
+}
+.container_2{
+    width: 80%;
+    height: 250px;
+    background-color: white;
+    margin: 0 auto;
+}
+.dettaglio{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.nome-p{
+    background-color: gray;
+    padding: 5px;
+}
+.prova{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-around;
+}
+.prova2{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+
+}
+h4{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
 }
