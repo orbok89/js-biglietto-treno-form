@@ -8,20 +8,44 @@ body{
 }
 h1, h2{
     text-align: center;
+    color: white;
+    margin: 15px;
 }
 .container{
     width: 80%;
     height: 300px;
     background-color: white;
     margin: 0 auto;
+    border-radius: 30px;
 }
 label{
     text-align: center;
 }
 .riga_1{
     display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
 
 }
 #biglietto{
     display: none;
+}
+.prova{
+    display: flex;
+    flex-direction: column;
+    color: brown;
+}
+input, select {
+    border: 2px solid brown;
+    border-radius: 4px;
+}
+.riga_2{
+    display: flex;
+    justify-content: center;
+}
+#calcola, #annulla{
+    margin: 15px;
+    color: brown;
+    font-size: 25px;
 }
